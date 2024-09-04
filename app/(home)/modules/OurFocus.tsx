@@ -24,7 +24,7 @@ const OurFocus = () => {
                 {features.map((features, index) => (
                     <div key={index} className='bg-white p-4 rounded-lg shadow-sm'>
                         <div className='inline-block p-4 bg-gradient-to-r from-Blue to-[#50e2d3] rounded-lg'>
-                            <Image src={features.image} alt='photo' width={34} height={"auto"} />
+                            <Image src={features.image} alt='photo' width={34} height={24} />
                         </div>
 
                         <h3 className='my-4'>{features.title}</h3>

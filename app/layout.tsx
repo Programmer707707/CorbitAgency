@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Inter, Nunito_Sans} from "next/font/google";
+import { Inter} from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Head from "next/head";
 import Link from "next/link";
 
-const nunitoSans = Nunito_Sans({ subsets: ["latin"] });
+const nunitoSans = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Corbit",
