@@ -6,7 +6,7 @@ const ImageComp = ({img}: {img:StaticImageData})  => {
       src={img} 
       alt={'img'} 
       sizes='100vw' 
-      width={0} height={0} 
+      width={0} height="auto" 
       style={{width: '100%', height: 'auto'}} />
     
   )

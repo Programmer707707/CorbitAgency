@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Inter, Nunito_Sans } from "next/font/google";
+import { Inter, Nunito_Sans} from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Head from "next/head";
 import Link from "next/link";
 
-const inter = Nunito_Sans({ subsets: ["latin"] });
+const nunitoSans = Nunito_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Corbit",
@@ -19,10 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-      <Head>
-        <Link rel="icon" href="../images/logo.png" />
-      </Head>
+      <body className={nunitoSans.className}>
         <Navigation/>
         {children}
       </body>
